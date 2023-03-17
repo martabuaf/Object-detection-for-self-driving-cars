@@ -24,3 +24,4 @@ results = model(img)
 # Results
 results.print()  # or .show(), .save(), .crop(), .pandas(), etc.
 results.show()
+results.pandas().xyxy[0]
