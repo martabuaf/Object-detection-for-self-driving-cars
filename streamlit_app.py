@@ -33,11 +33,21 @@ selected = option_menu(
     orientation="horizontal",
 )
 
-# Sección 1
+# Animaciones
+
+car_gif = requests.get("https://assets9.lottiefiles.com/packages/lf20_ndLURGQdmU.json").json()
+
+charts_gif = requests.get("https://assets5.lottiefiles.com/packages/lf20_uxsajfrq.json").json()
+
+model_gif = requests.get("https://assets3.lottiefiles.com/private_files/lf30_wo802rvq.json").json()
+
+results_gif = requests.get("https://assets2.lottiefiles.com/packages/lf20_noohi61b.json").json()
+
+# Pag 1 - Inicio
 
 if selected == "Inicio":
  
-    st_lottie(requests.get("https://assets9.lottiefiles.com/packages/lf20_ndLURGQdmU.json").json(), height=450, key="car")
+    st_lottie(car_gif, height=450, key="car")
 
     st.markdown("## Introducción")
 
@@ -88,11 +98,11 @@ if selected == "Inicio":
     st.markdown('<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>', unsafe_allow_html=True)
     
 
-# Sección 2
+# Pag 2 - Datos
        
 if selected == "Datos":
  
-    st_lottie(requests.get("https://assets5.lottiefiles.com/packages/lf20_uxsajfrq.json").json(), height=450, key="charts")
+    st_lottie(charts_gif, height=450, key="charts")
 
     st.markdown("## Análisis del conjunto de datos")
 
@@ -129,9 +139,11 @@ if selected == "Datos":
         st.plotly_chart(fig, use_container_width=True)
 
 
+# Pag 3 - Modelo
+
 if selected == "Modelo":
  
-    st_lottie(requests.get("https://assets3.lottiefiles.com/private_files/lf30_wo802rvq.json").json(), height=450, key="model")
+    st_lottie(model_gif, height=450, key="model")
 
     st.markdown("## Detección de objetos con YOLOv8")
 
@@ -164,10 +176,13 @@ if selected == "Modelo":
     st.markdown("## Observaciones")
 
     st.markdown('<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>', unsafe_allow_html=True)
-    
+
+
+ # Pag 4 - Resultados
+
 if selected == "Resultados":
 
-    st_lottie(requests.get("https://assets2.lottiefiles.com/packages/lf20_noohi61b.json").json(), height=500, key="results")
+    st_lottie(results_gif, height=500, key="results")
 
     st.markdown("## Resultados")
 
