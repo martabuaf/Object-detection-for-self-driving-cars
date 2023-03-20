@@ -1,0 +1,9 @@
+set,class,count
+train,biker,3704
+train,car,127760
+train,pedestrian,21472
+train,trafficLight,34277
+train,truck,7165
+validation,car,113
+validation,pedestrian,19
+validation,truck,29
