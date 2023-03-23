@@ -8,7 +8,6 @@ import requests
 
 # Gráficos
 import altair as alt
-import plotly.figure_factory as ff
 import plotly.express as px
 
 # Integración
