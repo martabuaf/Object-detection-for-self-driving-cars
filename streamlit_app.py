@@ -115,7 +115,7 @@ if selected == "Datos":
 
     with col1:
 
-        fig = px.sunburst(df_class.assign(hole = " "), path=["hole","set","class"], values="count", color="set", color_discrete_map = {'train': cmap["dark_green"], 'val' : cmap["yellow"], 'test': cmap["orange"]})
+        fig = px.sunburst(df_class, path=["set","class"], values="count", color="set", color_discrete_map = {'train': cmap["dark_green"], 'validation' : cmap["blue_green"], 'test': cmap["orange"]})
 
         fig.update_traces(textinfo="label+percent parent")
 
@@ -235,7 +235,7 @@ if selected == "Resultados":
 
         fig.data[0].name, fig.data[1].name = "train", "validation"
 
-        fig.update_layout(yaxis_title=None, yaxis_range=[0,2.5])
+        fig.update_layout(yaxis_title=None, yaxis_range=[0,0.05])
 
         fig.update_layout(showlegend=False, xaxis_title=None)
     
@@ -245,17 +245,17 @@ if selected == "Resultados":
 
         fig = px.line(df_results, x="epoch", y=["train/box_loss", "val/box_loss"], title="location loss", color_discrete_sequence=[cmap["blue_green"], cmap["yellow"]])
 
-        fig.update_layout(yaxis_title=None, yaxis_range=[0,2.5])
+        fig.update_layout(yaxis_title=None, yaxis_range=[0,0.05])
 
         fig.update_layout(legend = dict(title=None, orientation="h", y=-0.15, yanchor="top", xanchor="right", x=0.8, itemwidth=40), xaxis_title=None, yaxis_title=None)
 
         st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
-    with col3: # Dfl_loss
+    with col3: # Object_loss
 
-        fig = px.line(df_results, x="epoch", y=["train/dfl_loss", "val/dfl_loss"], title="confidence loss", color_discrete_sequence=[cmap["blue_green"], cmap["yellow"]])
+        fig = px.line(df_results, x="epoch", y=["train/obj_loss", "val/obj_loss"], title="object loss", color_discrete_sequence=[cmap["blue_green"], cmap["yellow"]])
 
-        fig.update_layout(yaxis_title=None, yaxis_range=[0,2.5])
+        fig.update_layout(yaxis_title=None, yaxis_range=[0,0.05])
 
         fig.update_layout(showlegend=False, xaxis_title=None)
 
@@ -275,7 +275,7 @@ if selected == "Resultados":
 
     with tab1: # Precisión
 
-        fig1 = px.line(df_results, x="epoch", y="metrics/precision(B)")
+        fig1 = px.line(df_results, x="epoch", y="metrics/precision")
 
         fig1.update_traces(line_color = cmap["blue_green"])
 
@@ -285,7 +285,7 @@ if selected == "Resultados":
 
     with tab2: # Recall
 
-        fig2 = px.line(df_results, x="epoch", y="metrics/recall(B)")
+        fig2 = px.line(df_results, x="epoch", y="metrics/recall")
 
         fig2.update_traces(line_color = cmap["yellow"])
 
@@ -293,9 +293,9 @@ if selected == "Resultados":
 
         st.plotly_chart(fig2, theme="streamlit", use_container_width=True)
 
-    with tab3: # mAP50(B)
+    with tab3: # mAP50
 
-        fig3 = px.line(df_results, x="epoch", y="metrics/mAP50(B)")
+        fig3 = px.line(df_results, x="epoch", y="metrics/mAP50")
 
         fig3.update_traces(line_color = cmap["orange"])
 
@@ -303,9 +303,9 @@ if selected == "Resultados":
 
         st.plotly_chart(fig3, theme="streamlit", use_container_width=True)
 
-    with tab4: # mAP50-95(B)
+    with tab4: # mAP50-95
 
-        fig4 = px.line(df_results, x="epoch", y="metrics/mAP50-95(B)")
+        fig4 = px.line(df_results, x="epoch", y="metrics/mAP50-95")
 
         fig4.update_traces(line_color = cmap["green"])
 
@@ -317,9 +317,9 @@ if selected == "Resultados":
 
     st.markdown('<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>', unsafe_allow_html=True)
 
-    data=[[1, 25, 30, 50, 1, 40], [20, 1, 60, 80, 30, 20], [30, 60, 1, 5, 20, 30], [20, 1, 60, 80, 30, 20], [1, 25, 30, 50, 1, 40], [30, 60, 1, 5, 20, 30]]
+    data=[[0.77, 0, 0.01, 0.17, 0, 0.62], [0, 0.46, 0.11, 0, 0, 0.16], [0, 0.02, 0.43, 0, 0, 0.03], [0.01, 0, 0, 0.55, 0, 0.06], [0, 0, 0, 0, 0.73, 0.13], [0.22, 0.52, 0.45, 0.28, 0.27, 0]]
 
-    fig2 = px.imshow(data, labels=dict(x="Valor predicho", y="Valor real", color="Productivity"), x=['Coche', 'Peatón', 'Ciclista', 'Camión', 'Semáforo', 'Fondo'], y=['Coche', 'Peatón', 'Ciclista', 'Camión', 'Semáforo', 'Fondo'], text_auto=True, color_continuous_scale = 'mint')
+    fig2 = px.imshow(data, labels=dict(x="Valor real", y="Valor predicho", color="Productivity"), x=['Coche', 'Peatón', 'Ciclista', 'Camión', 'Semáforo', 'Fondo'], y=['Coche', 'Peatón', 'Ciclista', 'Camión', 'Semáforo', 'Fondo'], text_auto=True, color_continuous_scale = 'mint')
     
     fig2.update_coloraxes(showscale=False)
 

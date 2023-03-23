@@ -1,0 +1,6 @@
+train: /Users/marta/Documents/GitHub/Object-detection-for-self-driving-cars/train
+val: /Users/marta/Documents/GitHub/Object-detection-for-self-driving-cars/val
+
+nc: 5
+
+names: ["car", "pedestrian", "biker", "truck", "trafficLight"]
