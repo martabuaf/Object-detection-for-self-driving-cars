@@ -7,7 +7,6 @@ import json
 import requests
 
 # Gráficos
-import altair as alt
 import plotly.express as px
 
 # Integración
