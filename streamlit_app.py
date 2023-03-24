@@ -18,7 +18,7 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 
 # Parámetros iniciales
 
-dataset_dir = "martabuaf/Object-detection-for-self-driving-cars/"
+dataset_dir = ""
 
 cmap = {"dark_green": 'rgb(0,112,88)', "green": 'rgb(80,145,125)', "blue_green": 'rgb(38,160,146)', "yellow": 'rgb(239,199,73)', "orange": 'rgb(229,93,47)'}
 
