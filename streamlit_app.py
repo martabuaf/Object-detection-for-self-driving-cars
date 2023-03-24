@@ -18,8 +18,6 @@ from streamlit_extras.add_vertical_space import add_vertical_space
 
 # Parámetros iniciales
 
-dataset_dir = ""
-
 cmap = {"dark_green": 'rgb(0,112,88)', "green": 'rgb(80,145,125)', "blue_green": 'rgb(38,160,146)', "yellow": 'rgb(239,199,73)', "orange": 'rgb(229,93,47)'}
 
 # Configuración de página
@@ -78,9 +76,7 @@ if selected == "Inicio":
 
         add_vertical_space(5)
 
-        data_path = "/Users/marta/Documents/GitHub/Object-detection-for-self-driving-cars"
-
-        img = f"{data_path}/img_data/1478019952686311006_jpg.rf.54e2d12dbabc46be3c78995b6eaf3fee.jpg"
+        img = "img_data/1478898326312239784_jpg.rf.68d1e82fac5c63639311a202f261808a.jpg"
 
         st.image(img, caption = "Imagen")
 
