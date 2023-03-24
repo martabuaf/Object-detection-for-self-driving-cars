@@ -109,7 +109,7 @@ if selected == "Datos":
 
     col1, col2 = st.columns([6,5])
 
-    df_class = pd.read_csv(dataset_dir+"class_info.csv")
+    df_class = pd.read_csv("class_info.csv")
 
     with col1:
 
@@ -149,7 +149,7 @@ if selected == "Datos":
     
     add_vertical_space(2)
 
-    df_data = pd.read_csv(dataset_dir+"data_info.csv")
+    df_data = pd.read_csv("data_info.csv")
 
     filtered_df = dataframe_explorer(df_data)
     
@@ -207,7 +207,7 @@ if selected == "Resultados":
 
     # Histograma
 
-    df_img = pd.read_csv(dataset_dir+"img_info.csv")
+    df_img = pd.read_csv("img_info.csv")
 
     fig = px.histogram(df_img, x=df_img.index, y="count", color="class", marginal="rug", barmode='stack', hover_data=df_img.columns, category_orders={"class":["car", "pedestrian", "trafficLight", "truck", "biker"]}, color_discrete_map = {'biker': cmap["dark_green"], 'car': cmap["green"], 'pedestrian': cmap["blue_green"], 'trafficLight': cmap["yellow"], 'truck': cmap["orange"]})
 
@@ -225,7 +225,7 @@ if selected == "Resultados":
 
     col1, col2, col3 = st.columns(3)
 
-    df_results = pd.read_csv(dataset_dir+"results.csv", skipinitialspace = True)
+    df_results = pd.read_csv("results.csv", skipinitialspace = True)
 
     with col1: # Class_loss 
 
