@@ -181,9 +181,7 @@ if selected == "Modelo":
 
         st.write("")
 
-        data_path = "/Users/marta/Documents/GitHub/Object-detection-for-self-driving-cars"
-
-        img = f"{data_path}/img_data/1478019952686311006_jpg.rf.54e2d12dbabc46be3c78995b6eaf3fee.jpg"
+        img = "img_data/1478898326312239784_jpg.rf.68d1e82fac5c63639311a202f261808a.jpg"
 
         st.image(img, caption = "Resultados")
 
