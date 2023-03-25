@@ -177,7 +177,7 @@ if selected == "Modelo":
 
         st.write("")
 
-        img = f"foto_predict/con{con}_sup{sup}/foto.jpg"
+        img = f"foto_predict/con{int(con*100)}_sup{int(sup*100)}/foto.jpg"
 
         st.image(img, caption = "Resultados")
 
