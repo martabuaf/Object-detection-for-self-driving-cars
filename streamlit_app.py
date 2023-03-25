@@ -86,7 +86,7 @@ if selected == "Inicio":
     
     st.markdown("### Conclusión")
 
-    st.markdown('<div style="text-align: justify;"><p>La conducción autónoma es una tecnología con un gran potencial para mejorar la seguridad, la eficiencia y la comodidad del transporte. Sin embargo, todavía hay desafíos importantes que deben abordarse antes de que se pueda realizar plenamente su potencial.</p><p>La complejidad de los entornos de conducción, la interacción con otros usuarios de la carretera y la regulación gubernamental son solo algunos de los desafíos que enfrenta la conducción autónoma. Con el tiempo y los avances tecnológicos y regulatorios, es probable que la conducción autónoma desempeñe un papel cada vez más importante en el futuro del transporte.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>La conducción autónoma es una tecnología con un gran potencial para mejorar la seguridad, la eficiencia y la comodidad del transporte. Sin embargo, todavía hay desafíos importantes que deben abordarse antes de que se pueda alcanzar plenamente su potencial.</p><p>La complejidad de los entornos de conducción, la interacción con otros usuarios de la carretera y la regulación gubernamental son solo algunos de los desafíos que enfrenta la conducción autónoma. Con el tiempo y los avances tecnológicos y regulatorios, es probable que la conducción autónoma desempeñe un papel cada vez más importante en el futuro del transporte.</p></div>', unsafe_allow_html=True)
     
 
 # Pag 2 - Datos
@@ -167,21 +167,25 @@ if selected == "Modelo":
 
         st.markdown("### Opciones de visualización")
 
-        st.multiselect("Escoge lo que quieres ver", ["peaton", "coche", "semaforo"])
-
         st.slider("Escoge una imagen", max_value=100, value=50)
 
-        st.slider("Confianza", max_value=1.0, value=0.5, step=0.1)
+        con = st.slider("Confianza", max_value=1.0, value=0.5, step=0.1)
 
-        st.slider("Superposición", max_value=1.0, value=0.3, step=0.1)
+        sup = st.slider("Superposición", max_value=1.0, value=0.3, step=0.1)
 
     with col2:
 
         st.write("")
 
-        img = "img_data/1478898326312239784_jpg.rf.68d1e82fac5c63639311a202f261808a.jpg"
+        img = f"foto_predict/con{con}_sup{sup}/foto.jpg"
 
         st.image(img, caption = "Resultados")
+
+    option = st.multiselect("Escoge lo que quieres ver", ["chicago", "los_angeles", "new_york", "seattle"])
+
+    video = f"videos_predict/{option}.mp4"
+
+    st.video(video)
 
     st.markdown("## Observaciones")
 
