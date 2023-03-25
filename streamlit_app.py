@@ -46,7 +46,7 @@ if selected == "Inicio":
 
     st.markdown("## Introducción")
 
-    st.markdown('<div style="text-align: justify;"><p>La conducción autónoma es una tecnología innovadora y prometedora que ha capturado la atención de la industria automotriz y de los consumidores en todo el mundo. Esta tecnología utiliza sistemas avanzados de inteligencia artificial y robótica para permitir que los vehículos operen de forma independiente, sin intervención humana directa. Sin embargo, a pesar de sus promesas, la conducción autónoma todavía enfrenta importantes desafíos y limitaciones que deben abordarse antes de que se pueda realizar su potencial.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>La conducción autónoma es una tecnología innovadora y prometedora que ha capturado la atención de la industria automovilística y de los consumidores en todo el mundo. Esta tecnología utiliza sistemas avanzados de inteligencia artificial y robótica para permitir que los vehículos operen de forma independiente, sin necesidad de intervención humana. Sin embargo, a pesar de sus promesas, la conducción autónoma todavía enfrenta importantes desafíos y limitaciones que deben abordarse antes de que se pueda alcanzar todo su potencial.</p></div>', unsafe_allow_html=True)
     
     add_vertical_space(1)
 
@@ -56,7 +56,7 @@ if selected == "Inicio":
 
         st.markdown("### Problema")
 
-        st.markdown('<div style="text-align: justify;">Uno de los principales desafíos de la conducción autónoma es la complejidad de los entornos de conducción. Los vehículos autónomos deben ser capaces de percibir y comprender su entorno, tomar decisiones de conducción en tiempo real y controlar sus acciones de forma autónoma, incluso en situaciones impredecibles y caóticas, como el tráfico intenso o las condiciones climáticas adversas.</p><p>Otro desafío es la interacción con otros usuarios de la carretera, como los peatones, ciclistas y conductores de otros vehículos. Los vehículos autónomos deben ser capaces de detectar y responder a estas interacciones de forma segura y eficiente, para evitar accidentes y conflictos.</p></div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align: justify;">Uno de los principales desafíos de la conducción autónoma es la complejidad de los entornos de conducción. Los vehículos autónomos deben ser capaces de percibir y comprender su entorno, tomar decisiones de conducción en tiempo real y controlar sus interacciones con otros usuarios de la carretera, como los peatones, ciclistas y conductores de otros vehículos.</p><p>Es necesario que los vehículos autónomos consigan detectar y responder a estas interacciones de forma segura y eficiente, para evitar accidentes y conflictos.</p></div>', unsafe_allow_html=True)
     
     with col2:
 
