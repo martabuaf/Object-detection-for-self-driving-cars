@@ -159,7 +159,7 @@ if selected == "Modelo":
 
     st.markdown('<div style="text-align: justify;">YOLOv8 es una de las versiones más recientes de la red neuronal de detección de objetos YOLO (You Only Look Once). La versión YOLOv8 se basa en una red neuronal convolucional profunda y utiliza el algoritmo de detección de objetos basado en cuadrícula para detectar y clasificar objetos en una imagen.</p><p>La detección de objetos con YOLOv8 comienza por dividir la imagen en una cuadrícula. Luego, para cada celda de la cuadrícula, se predicen los cuadros delimitadores que rodean los objetos detectados en esa celda, junto con las probabilidades de que los objetos pertenezcan a diferentes clases. Estas predicciones se realizan simultáneamente para todas las celdas de la cuadrícula, lo que permite una detección de objetos muy rápida y eficiente.</p><p>La red neuronal de YOLOv8 se entrena con una gran cantidad de imágenes etiquetadas para detectar una amplia variedad de objetos en diferentes situaciones y condiciones de iluminación. Además, YOLOv8 utiliza técnicas avanzadas de procesamiento de imágenes y aprendizaje profundo para mejorar la precisión y reducir los errores de detección.</p></p>A continuación se muestra un ejemplo de cómo trabaja la red neuronal YOLOv8 adaptada a nuestro conjunto de imágenes.<p></div>', unsafe_allow_html=True)
     
-    add_vertical_space(2)
+    add_vertical_space(1)
 
     col1, col2 = st.columns([1, 2])
 
@@ -181,9 +181,9 @@ if selected == "Modelo":
 
         st.image(img, caption = "Resultados")
 
-    st.markdown("### Ejemplo")
+    st.markdown("""<hr style="height:2px;border:none;color:#333;background-color:#e7e7e7;" /> """, unsafe_allow_html=True)
 
-    st.markdown('<div style="text-align: justify;"><p>A continuación puedes ver como trabaja nuestro modelo en los siguientes vídeos de ejemplo.</p></div>', unsafe_allow_html=True)
+    st.markdown("### Ejemplo")
 
     option = st.selectbox("Escoge entre una de estas opciones:", ["chicago", "los_angeles", "new_york", "seattle"])
 
