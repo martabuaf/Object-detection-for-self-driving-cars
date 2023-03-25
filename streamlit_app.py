@@ -93,7 +93,7 @@ if selected == "Datos":
 
     st.markdown("## Análisis del conjunto de datos")
 
-    st.markdown('<div style="text-align: justify;"><p>El análisis de datos implica el procesamiento y la evaluación de grandes cantidades de datos de sensores para extraer información útil y relevante. Los datos pueden incluir información de cámaras, LIDAR, radar y otros sensores utilizados en los vehículos autónomos. El objetivo del análisis de datos es encontrar patrones, tendencias y relaciones que puedan ayudar a la inteligencia artificial a tomar decisiones precisas y en tiempo real mientras conduce.</p><p>Para que el entrenamiento del modelo se realize de forma óptima, es importante llevar a cabo la división del conjunto de datos, que implica la separación del conjunto de datos en dos grupos: un conjunto de entrenamiento y un conjunto de prueba. El conjunto de entrenamiento se utiliza para enseñar a la inteligencia artificial cómo reconocer patrones y tomar decisiones, mientras que el conjunto de prueba se utiliza para evaluar el rendimiento de la inteligencia artificial en un entorno simulado.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>El análisis de datos implica el procesamiento y la evaluación de grandes cantidades de datos de sensores para extraer información útil y relevante. El conjunto de datos que hemos utilizado para entrenar la red neuronal lo encontramos en <a href="https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset" target = "_blank"> Kaggle</a> e incluyen imágenes de conducción e información sobre los elementos ya etiquetados en las imágenes. El objetivo del análisis de datos es encontrar los patrones, tendencias y relaciones que puedan ayudar a la inteligencia artificial a tomar decisiones precisas y en tiempo real mientras conduce.</p><p>Para que el entrenamiento del modelo se realize de forma óptima, llevamos a cabo la división del conjunto de datos, que implica la separación del conjunto de datos en dos grupos: un conjunto de entrenamiento y un conjunto de prueba. El conjunto de entrenamiento se utiliza para adaptar el funcionamiento de la red a nuestros objetivos, mientras que el conjunto de prueba se utiliza para evaluar el rendimiento final del moelo.</p></div>', unsafe_allow_html=True)
     
     add_vertical_space(1)
 
@@ -113,7 +113,7 @@ if selected == "Datos":
 
         st.markdown("### División del conjunto de datos")
 
-        st.markdown('<div style="text-align: justify;"><p>Al dividir el conjunto de datos se consigue evitar el sobreajuste, que ocurre cuando la red neuronal aprende demasiado bien el conjunto de entrenamiento y no es capaz de generalizar correctamente en nuevas situaciones. Para ello definiremos tres subconjuntos: el conjunto de entrenamiento (train), validación (val) y prueba (test).</p><p>Al separar el conjunto de datos, nos aseguramos de que el modelo pueda aprender de manera efectiva y generalizar bien en diferentes entornos.</p></div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align: justify;"><p>Al separar el conjunto de datos, nos aseguramos de que el modelo pueda aprender de manera efectiva y generalizar bien en diferentes entornos, evitando el sobreajuste.</p>Para ello definiremos tres subconjuntos: el conjunto de entrenamiento (train), validación (val) y prueba (test).</p></div>', unsafe_allow_html=True)
     
     add_vertical_space(1)
 
