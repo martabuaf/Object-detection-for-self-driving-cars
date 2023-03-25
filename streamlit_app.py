@@ -47,8 +47,6 @@ if selected == "Inicio":
     st.markdown("## Introducción")
 
     st.markdown('<div style="text-align: justify;"><p>La conducción autónoma es una tecnología innovadora y prometedora que ha capturado la atención de la industria automovilística y de los consumidores en todo el mundo. Esta tecnología utiliza sistemas avanzados de inteligencia artificial y robótica para permitir que los vehículos operen de forma independiente, sin necesidad de intervención humana. Sin embargo, a pesar de sus promesas, la conducción autónoma todavía enfrenta importantes desafíos y limitaciones que deben abordarse antes de que se pueda alcanzar todo su potencial.</p></div>', unsafe_allow_html=True)
-    
-    add_vertical_space(1)
 
     col1, col2 = st.columns(2)
 
@@ -179,13 +177,13 @@ if selected == "Modelo":
        
         img = f"foto_predict/con{int(con*100)}_sup{int(sup*100)}/foto.jpg"
 
-        st.image(img, caption = "Resultados")
+        st.image(img, caption = "Imagen de ejemplo")
 
     st.markdown("""<hr style="height:2px;border:none;color:#333;background-color:#e7e7e7;" /> """, unsafe_allow_html=True)
 
     st.markdown("### Ejemplo")
 
-    option = st.selectbox("Escoge entre una de estas opciones:", ["chicago", "los_angeles", "new_york", "seattle"])
+    option = st.selectbox("Escoge una de las siguientes opciones:", ["chicago", "los_angeles", "new_york", "seattle"])
 
     video = f"videos_predict/{option}.mp4"
 
@@ -193,7 +191,7 @@ if selected == "Modelo":
 
     st.markdown("## Observaciones")
 
-    st.markdown('<div style="text-align: justify;"><p>La detección de objetos con YOLOv8 ofrece un enfoque rápido y eficiente para la detección de objetos en imágenes, lo que lo hace ideal para aplicaciones en tiempo real como la conducción autónoma, la vigilancia de seguridad y la robótica. Sin embargo, también tiene algunas limitaciones importantes que es necesario tener en cuenta.</p><p>Aunque tiene una buena precisión general en la detección de objetos, puede tener dificultades para detectar objetos muy pequeños o que ocupen solo una pequeña porción de la imagen.Su rendimiento puede disminuir en imágenes de baja resolución. Esto significa que si las imágenes que se están analizando son de baja calidad o baja resolución, la precisión de detección puede ser afectada.También tiene dificultades para clasificar objetos que tienen características visuales muy similares, que están parcialmente ocultos o que se encuentran en movimiento. Esto puede resultar en falsos positivos o negativos en la detección de objetos.</p><p>En general, YOLOv8 es una herramienta muy útil para la detección de objetos, pero es importante tener en cuenta sus limitaciones y asegurarse de que sea la opción adecuada para la tarea específica de detección de objetos que se está llevando a cabo.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>La detección de objetos con YOLOv8 ofrece un enfoque rápido y eficiente para la detección de objetos en imágenes, lo que lo hace ideal para aplicaciones en tiempo real como la conducción autónoma, la vigilancia de seguridad y la robótica. Sin embargo, también tiene algunas limitaciones importantes que es necesario tener en cuenta.</p><p>Aunque tiene una buena precisión general en la detección de objetos, puede tener dificultades para detectar objetos muy pequeños o que ocupen solo una pequeña porción de la imagen. Su rendimiento puede disminuir en imágenes de baja resolución. Esto significa que si las imágenes que se están analizando son de baja calidad o baja resolución, la precisión de detección puede ser afectada. También tiene dificultades para clasificar objetos que tienen características visuales muy similares, que están parcialmente ocultos o que se encuentran en movimiento. Esto puede resultar en falsos positivos o negativos en la detección de objetos.</p><p>En general, YOLOv8 es una herramienta muy útil para la detección de objetos, pero es importante tener en cuenta sus limitaciones y asegurarse de que sea la opción adecuada para la tarea específica de detección de objetos que se está llevando a cabo.</p></div>', unsafe_allow_html=True)
 
  # Pag 4 - Resultados
 
