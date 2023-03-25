@@ -78,7 +78,7 @@ if selected == "Inicio":
 
         st.markdown("### Objetivo")
 
-        st.markdown('<div style="text-align: justify;"><p>A través de la detección de objetos se consigue proporcionar información precisa y en tiempo real sobre el entorno del vehículo. Al eliminar la posibilidad de errores humanos, se reducirán significativamente el número de accidentes de tráfico y, además, la conducción autónoma puede optimizar la velocidad y la ruta de conducción, lo que puede reducir el tiempo de viaje, disminuir la congestión del tráfico y ahorrar combustible.</p><p> Por último, la conducción autónoma puede proporcionar una mayor comodidad y accesibilidad para personas con discapacidad o movilidad reducida.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align: justify;"><p>A través de la detección de objetos se consigue proporcionar información precisa y en tiempo real sobre el entorno del vehículo. Al eliminar la posibilidad de errores humanos, se reducirán significativamente el número de accidentes de tráfico. Además, la conducción autónoma puede optimizar la velocidad y la ruta de conducción, lo que puede reducir el tiempo de viaje, disminuir la congestión del tráfico y ahorrar combustible.</p><p> Por último, la conducción autónoma puede proporcionar una mayor comodidad y accesibilidad para personas con discapacidad o movilidad reducida.</div>', unsafe_allow_html=True)
     
     st.markdown("### Conclusión")
 
@@ -120,6 +120,8 @@ if selected == "Datos":
     with col3:
 
         st.markdown("### Distribución de las clases")
+
+        add_vertical_space(1)
 
         st.markdown('<div style="text-align: justify;"><p>En un modelo de clasificación es importante que las clases se encuentren equilibradas. Si una clase tiene significativamente más ejemplos que la otra, el modelo estará sesgado hacia esa clase y tendrá dificultades para clasificar las clases menos representadas, suponiendo una disminución de la precisión general del modelo.</p><p>Por lo tanto, es importante que las clases se encuentren bien distribuidas para garantizar que el modelo tenga una precisión y un rendimiento óptimos.</p></div>', unsafe_allow_html=True)
     
