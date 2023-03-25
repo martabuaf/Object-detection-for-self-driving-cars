@@ -62,9 +62,9 @@ if selected == "Inicio":
 
         add_vertical_space(5)
 
-        img = "img_data/1478898326312239784_jpg.rf.68d1e82fac5c63639311a202f261808a.jpg"
+        img = "detect/foto.jpg"
 
-        st.image(img, caption = "Imagen")
+        st.image(img, caption = "Imagen original")
 
     add_vertical_space(1)
 
@@ -74,9 +74,9 @@ if selected == "Inicio":
 
         add_vertical_space(5)
 
-        img = "img_data/1478898326312239784_jpg.rf.68d1e82fac5c63639311a202f261808a.jpg"
+        img = "detect/con50_sup50/foto.jpg"
 
-        st.image(img, caption = "Imagen")
+        st.image(img, caption = "Resultados de la detección de objetos")
 
     with col4:
 
