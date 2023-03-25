@@ -1,6 +1,6 @@
 <h1 style="text-align:center;">Detección de objetos para conducción autónoma</h1>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/122131317/227728740-7b38151f-f415-4fc9-9cd8-efcdff5b5606.jpg" width="800"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/122131317/227728740-7b38151f-f415-4fc9-9cd8-efcdff5b5606.jpg" width="600"></p>
 
 <h3>Resumen:</h3>
 <p>El objetivo de este proyecto es detectar objetos en tiempo real pertenecientes a coches, peatones, ciclistas, camiones y semáforos, para la conducción autónoma. Para ello analizaremos imágenes de la vía pública, con el objetivo de que nuestro sistema localice y clasifique los diferentes objetos contenidos en las imágenes sin necesidad de supervisión humana. El conjunto de datos que hemos utilizado lo encontramos en <a href="https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset" target = "_blank"> Kaggle</a>.</p>
