@@ -167,8 +167,6 @@ if selected == "Modelo":
 
         st.markdown("### Opciones de visualización")
 
-        st.slider("Escoge una imagen", max_value=100, value=50)
-
         con = st.slider("Confianza", max_value=1.0, value=0.5, step=0.1)
 
         sup = st.slider("Superposición", max_value=1.0, value=0.3, step=0.1)
@@ -181,7 +179,7 @@ if selected == "Modelo":
 
         st.image(img, caption = "Resultados")
 
-    option = st.multiselect("Escoge lo que quieres ver", ["chicago", "los_angeles", "new_york", "seattle"])
+    option = st.selectbox("Escoge lo que quieres ver", ["chicago", "los_angeles", "new_york", "seattle"])
 
     video = f"videos_predict/{option}.mp4"
 
