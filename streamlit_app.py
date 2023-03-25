@@ -114,8 +114,6 @@ if selected == "Datos":
         st.markdown("### División del conjunto de datos")
 
         st.markdown('<div style="text-align: justify;"><p>Para que el entrenamiento del modelo se realize de forma óptima llevamos a cabo la división del conjunto de datos, para lo que definimos tres subconjuntos: el conjunto de entrenamiento (train), validación (val) y prueba (test).</p><p>Al separar el conjunto de datos nos aseguramos de que el modelo pueda aprender de manera efectiva y generalizar bien en diferentes entornos, evitando el sobreajuste.</p></div>', unsafe_allow_html=True)
-    
-    add_vertical_space(1)
 
     col3, col4 = st.columns([5,6])
 
@@ -135,9 +133,9 @@ if selected == "Datos":
 
     st.markdown("### Exploración de los datos")
 
-    st.markdown('<div style="text-align: justify;">La exploración de los datos de entrenamiento que hemos utilizado nos permite descubrir información útil en grandes conjuntos de datos. Al comprender mejor los datos, pueden tomar decisiones más informadas y construir modelos de inteligencia artificial más precisos y efectivos. A continuación se muestra la tabla con los datos utilizados para desarrollar el modelo de red neuronal.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;">A continuación se muestra la tabla con los datos utilizados para desarrollar el modelo de red neuronal. La exploración de los datos nos permitirá descubrir información útil y a comprender mejor el conjunto de datos, así podremos tomar decisiones más informadas que nos permitan construir modelos de inteligencia artificial más precisos y efectivos.</div>', unsafe_allow_html=True)
     
-    add_vertical_space(2)
+    add_vertical_space(1)
 
     df_data = pd.read_csv("data_info.csv")
 
