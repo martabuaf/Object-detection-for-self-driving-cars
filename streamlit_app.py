@@ -93,7 +93,7 @@ if selected == "Datos":
 
     st.markdown("## Análisis del conjunto de datos")
 
-    st.markdown('<div style="text-align: justify;"><p>El análisis de datos implica el procesamiento y la evaluación de grandes cantidades de datos de sensores para extraer información útil y relevante. El conjunto de datos que hemos utilizado para entrenar la red neuronal lo encontramos en <a href="https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset" target = "_blank"> Kaggle</a> e incluyen imágenes de conducción e información sobre los elementos ya etiquetados en las imágenes. El objetivo del análisis de datos es encontrar los patrones, tendencias y relaciones que puedan ayudar a la inteligencia artificial a tomar decisiones precisas y en tiempo real mientras conduce.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>El conjunto de datos que hemos utilizado para entrenar la red neuronal lo encontramos en <a href="https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset" target = "_blank"> Kaggle</a> e incluyen imágenes de conducción e información sobre los elementos ya etiquetados en las imágenes.</p>Llevamos a cabo el análisis de los datos para extraer información útil y relevante y poder encontrar patrones, tendencias y relaciones que puedan ayudar a la inteligencia artificial a tomar decisiones precisas y en tiempo real mientras conduce.</p></div>', unsafe_allow_html=True)
     
     add_vertical_space(1)
 
