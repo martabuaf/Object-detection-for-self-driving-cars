@@ -167,6 +167,8 @@ if selected == "Modelo":
 
         st.markdown("### Opciones de visualización")
 
+        add_vertical_space(2)
+
         con = st.slider("Confianza", max_value=1.0, value=0.5, step=0.1)
 
         sup = st.slider("Superposición", max_value=1.0, value=0.3, step=0.1)
@@ -183,7 +185,7 @@ if selected == "Modelo":
 
     st.markdown('<div style="text-align: justify;"><p>A continuación puedes ver como trabaja nuestro modelo en los siguientes vídeos de ejemplo.</p></div>', unsafe_allow_html=True)
 
-    option = st.selectbox("Escoge lo que quieres ver", ["chicago", "los_angeles", "new_york", "seattle"])
+    option = st.selectbox("Escoge entre una de estas opciones:", ["chicago", "los_angeles", "new_york", "seattle"])
 
     video = f"videos_predict/{option}.mp4"
 
