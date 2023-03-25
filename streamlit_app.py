@@ -64,8 +64,6 @@ if selected == "Inicio":
 
         st.image(img, caption = "Imagen original")
 
-    add_vertical_space(1)
-
     col3, col4 = st.columns(2)
 
     with col3:
