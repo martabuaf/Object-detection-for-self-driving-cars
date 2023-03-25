@@ -74,7 +74,7 @@ if selected == "Inicio":
 
         add_vertical_space(5)
 
-        img = "detect/con50_sup50/foto.jpg"
+        img = "detect/con30_sup0/foto.jpg"
 
         st.image(img, caption = "Resultados de la detección de objetos")
 
