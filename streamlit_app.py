@@ -137,7 +137,7 @@ if selected == "Datos":
 
     st.markdown("### Exploración de los datos")
 
-    st.markdown('<div style="text-align: justify;">A continuación se muestra la tabla con los datos utilizados para desarrollar el modelo de red neuronal. La exploración de los datos nos permitirá descubrir información útil y a comprender mejor el conjunto de datos, así podremos tomar decisiones más informadas que nos permitan construir modelos de inteligencia artificial más precisos y efectivos.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;">A continuación se muestra la tabla con los datos utilizados para desarrollar el modelo de red neuronal. La exploración de los datos nos permitirá descubrir información útil y a comprender mejor el conjunto de datos, así podremos tomar decisiones más informadas que nos permitan construir un modelo de inteligencia artificial más preciso y efectivo.</div>', unsafe_allow_html=True)
     
     add_vertical_space(1)
 
@@ -183,7 +183,7 @@ if selected == "Modelo":
 
     st.markdown("### Ejemplo")
 
-    option = st.selectbox("Escoge una de las siguientes opciones:", ["seattle", "chicago", "los_angeles", "new_york"])
+    option = st.selectbox("Escoge una de las siguientes opciones:", ["seattle", "new_york", "los_angeles", "chicago"])
 
     video = f"videos_predict/{option}.mp4"
 
@@ -191,7 +191,7 @@ if selected == "Modelo":
 
     st.markdown("## Observaciones")
 
-    st.markdown('<div style="text-align: justify;"><p>La detección de objetos con YOLOv8 ofrece un enfoque rápido y eficiente para la detección de objetos en imágenes, lo que lo hace ideal para aplicaciones en tiempo real como la conducción autónoma, la vigilancia de seguridad y la robótica. Sin embargo, también tiene algunas limitaciones importantes que es necesario tener en cuenta.</p><p>Aunque proporciona una buena precisión general en la detección de objetos, tiene dificultades para detectar objetos muy pequeños o que ocupen solo una pequeña porción de la imagen. Su rendimiento disminuye en imágenes de baja resolución, esto significa que si las imágenes analizadas son de baja calidad, la precisión de detección se ve afectada. También tiene dificultades para clasificar objetos que tienen características visuales muy similares, que están parcialmente ocultos o que se encuentran en movimiento. Esto puede resultar en falsos positivos o negativos en la detección de objetos.</p><p>En general, YOLOv8 es una herramienta muy útil para la detección de objetos, pero es importante tener en cuenta sus limitaciones y adaptartla para que se adecúe a la tarea específica de detección de objetos que se está llevando a cabo.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>La detección de objetos con YOLOv8 ofrece un enfoque rápido y eficiente para la detección de objetos en imágenes, lo que lo hace ideal para aplicaciones en tiempo real como la conducción autónoma, la vigilancia de seguridad y la robótica. Sin embargo, también tiene algunas limitaciones importantes que es necesario tener en cuenta.</p><p>Aunque proporciona una buena precisión general en la detección de objetos, tiene dificultades para detectar objetos muy pequeños o que ocupen solo una pequeña porción de la imagen. Su rendimiento disminuye en imágenes de baja resolución, esto significa que si las imágenes analizadas son de baja calidad, la precisión de detección se ve afectada. También tiene dificultades para clasificar objetos que tienen características visuales muy similares, que están parcialmente ocultos o que se encuentran en movimiento. Esto puede resultar en falsos positivos o negativos en la detección de objetos.</p><p>En general, YOLOv8 es una herramienta muy útil para la detección de objetos, pero es importante tener en cuenta sus limitaciones y adaptarla a la tarea específica de detección de objetos que se lleve a cabo.</p></div>', unsafe_allow_html=True)
 
  # Pag 4 - Resultados
 
@@ -217,7 +217,7 @@ if selected == "Resultados":
 
     st.subheader("Evolución del entrenamiento")
 
-    st.markdown('<div style="text-align: justify;">Las métricas de entrenamiento permiten evaluar el desempeño de la red neuronal durante el entrenamiento. Algunas métricas comunes incluyen la pérdida (loss), que mide la discrepancia entre las salidas predichas y las salidas reales durante el entrenamiento, y la precisión (accuracy), que mide la proporción de predicciones correctas en el conjunto de datos de entrenamiento. A continuación se representan los valores obtenidos del error  en la localización y clasificación de objetos en la imagen durante las etapas de entrenamiento y validación del modelo.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;">Las métricas de entrenamiento permiten evaluar el desempeño de la red neuronal durante el entrenamiento. Una de las métricas más comunes es la pérdida (loss), que mide la discrepancia entre las salidas predichas y las salidas reales durante el entrenamiento. A continuación se representan los valores obtenidos del error en la localización y clasificación de objetos en la imagen de los conjuntos de datos de entrenamiento y validación durante el entrenamiento del modelo.</div>', unsafe_allow_html=True)
 
     st.markdown("""<hr style="height:2px;border:none;color:#333;background-color:#e7e7e7;" /> """, unsafe_allow_html=True)
 
