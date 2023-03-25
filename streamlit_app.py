@@ -82,7 +82,7 @@ if selected == "Inicio":
 
         st.markdown("### Objetivo")
 
-        st.markdown('<div style="text-align: justify;"><p>A través de la detección de objetos se consigue proporcionar información precisa y en tiempo real sobre el entorno del vehículo. Al eliminar la posibilidad de errores humanos, como la distracción o la fatiga, se reducirán significativamente el número de accidentes de tráfico y, además, la conducción autónoma puede optimizar la velocidad y la ruta de conducción, lo que puede reducir el tiempo de viaje, disminuir la congestión del tráfico y ahorrar combustible.</p><p> Por último, la conducción autónoma puede proporcionar una mayor comodidad y accesibilidad para personas con discapacidad o movilidad reducida.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align: justify;"><p>A través de la detección de objetos se consigue proporcionar información precisa y en tiempo real sobre el entorno del vehículo. Al eliminar la posibilidad de errores humanos, se reducirán significativamente el número de accidentes de tráfico y, además, la conducción autónoma puede optimizar la velocidad y la ruta de conducción, lo que puede reducir el tiempo de viaje, disminuir la congestión del tráfico y ahorrar combustible.</p><p> Por último, la conducción autónoma puede proporcionar una mayor comodidad y accesibilidad para personas con discapacidad o movilidad reducida.</div>', unsafe_allow_html=True)
     
     st.markdown("### Conclusión")
 
