@@ -93,7 +93,7 @@ if selected == "Datos":
 
     st.markdown("## Análisis del conjunto de datos")
 
-    st.markdown('<div style="text-align: justify;"><p>El conjunto de datos que hemos utilizado para entrenar la red neuronal lo encontramos en <a href="https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset" target = "_blank"> Kaggle</a> e incluyen imágenes de conducción e información sobre los elementos ya etiquetados en las imágenes.</p>Llevamos a cabo el análisis de los datos para extraer información útil y relevante y poder encontrar patrones, tendencias y relaciones que puedan ayudar a la inteligencia artificial a tomar decisiones precisas y en tiempo real mientras conduce.</p></div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;"><p>El conjunto de datos que hemos utilizado para entrenar la red neuronal lo encontramos en <a href="https://www.kaggle.com/datasets/sshikamaru/udacity-self-driving-car-dataset" target = "_blank"> Kaggle</a> e incluye imágenes de conducción e información sobre los elementos ya etiquetados en las imágenes.</p>Llevamos a cabo el análisis de los datos para extraer información útil y relevante y poder encontrar patrones, tendencias y relaciones que puedan ayudar a la inteligencia artificial a tomar decisiones precisas y en tiempo real mientras conduce.</p></div>', unsafe_allow_html=True)
     
     add_vertical_space(1)
 
@@ -123,7 +123,7 @@ if selected == "Datos":
 
         st.markdown("### Distribución de las clases")
 
-        st.markdown('<div style="text-align: justify;"><p>En un modelo de clasificación, las clases se refieren a las diferentes categorías que el modelo debe clasificar. Si una clase tiene significativamente más ejemplos que la otra, el modelo puede estar sesgado hacia esa clase y tener dificultades para clasificar los ejemplos de la clase menos representada.</p><p>Además, tendrá dificultades para aprender patrones importantes en las clases menos representadas, suponiendo una disminución de la precisión general del modelo.</p><p>Por lo tanto, es importante que las clases se encuentren bien distribuidas para garantizar que el modelo tenga una precisión y un rendimiento óptimos.</p></div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align: justify;"><p>En un modelo de clasificación es importante que las clases se encuentren equilibradas. Si una clase tiene significativamente más ejemplos que la otra, el modelo estará sesgado hacia esa clase y tendrá dificultades para clasificar las clases menos representadas, suponiendo una disminución de la precisión general del modelo.</p><p>Por lo tanto, es importante que las clases se encuentren bien distribuidas para garantizar que el modelo tenga una precisión y un rendimiento óptimos.</p></div>', unsafe_allow_html=True)
     
     with col4:
 
