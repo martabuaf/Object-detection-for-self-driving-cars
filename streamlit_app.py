@@ -197,7 +197,7 @@ if selected == "Resultados":
 
     st.markdown("## Resultados")
 
-    st.markdown('<div style="text-align: justify;">Los resultados de un modelo de clasificación de inteligencia artificial representan la capacidad del modelo para asignar correctamente las diferentes instancias de datos a sus respectivas clases. En otras palabras, los resultados del modelo indican la precisión con la que el modelo ha sido capaz de aprender patrones en los datos y utilizarlos para realizar predicciones precisas. Esta gráfica representa la presencia de las clases a lo largo de todo el dataset que hemos utilizado para definir el modelo de red neuronal.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;">Los resultados de un modelo de clasificación de inteligencia artificial representan la capacidad del modelo para asignar correctamente las diferentes instancias de datos a sus respectivas clases. En otras palabras, los resultados del modelo indican la precisión con la que el modelo ha sido capaz de aprender patrones en los datos y utilizarlos para realizar predicciones precisas. La siguiente gráfica representa la presencia de las clases a lo largo de todo el dataset que hemos utilizado para definir el modelo de red neuronal.</div>', unsafe_allow_html=True)
 
     # Histograma
 
