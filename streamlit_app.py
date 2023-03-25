@@ -197,7 +197,7 @@ if selected == "Resultados":
 
     st.markdown("## Resultados")
 
-    st.markdown('<div style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;">Los resultados de un modelo de clasificación de inteligencia artificial representan la capacidad del modelo para asignar correctamente las diferentes instancias de datos a sus respectivas clases. En otras palabras, los resultados del modelo indican la precisión con la que el modelo ha sido capaz de aprender patrones en los datos y utilizarlos para realizar predicciones precisas. Esta gráfica representa la presencia de las clases a lo largo de todo el dataset que hemos utilizado para definir el modelo de red neuronal.</div>', unsafe_allow_html=True)
 
     # Histograma
 
@@ -213,7 +213,7 @@ if selected == "Resultados":
 
     st.subheader("Evolución del entrenamiento")
 
-    st.markdown('<div style="text-align: justify;">Las métricas de entrenamiento permiten evaluar el desempeño de la red neuronal durante el entrenamiento.Algunas métricas comunes incluyen la pérdida (loss), que mide la discrepancia entre las salidas predichas y las salidas reales durante el entrenamiento, y la precisión (accuracy), que mide la proporción de predicciones correctas en el conjunto de datos de entrenamiento. A continuación se representan los valores obtenidos del error  en la localización y clasificación de objetos en la imagen durante las etapas de entrenamiento (train) y validación (val) del modelo.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="text-align: justify;">Las métricas de entrenamiento permiten evaluar el desempeño de la red neuronal durante el entrenamiento. Algunas métricas comunes incluyen la pérdida (loss), que mide la discrepancia entre las salidas predichas y las salidas reales durante el entrenamiento, y la precisión (accuracy), que mide la proporción de predicciones correctas en el conjunto de datos de entrenamiento. A continuación se representan los valores obtenidos del error  en la localización y clasificación de objetos en la imagen durante las etapas de entrenamiento y validación del modelo.</div>', unsafe_allow_html=True)
 
     st.markdown("""<hr style="height:2px;border:none;color:#333;background-color:#e7e7e7;" /> """, unsafe_allow_html=True)
 
