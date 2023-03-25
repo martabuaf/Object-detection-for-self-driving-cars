@@ -131,7 +131,7 @@ if selected == "Datos":
 
         fig.update_layout(legend = dict( orientation="h", yanchor="top", y=0.02, xanchor="right", x=0.8, itemwidth=40), xaxis_showticklabels=False, xaxis_title=None, yaxis_title=None)
 
-        fig.update_traces(width = 1)
+        fig.update_traces(width = 0.5)
 
         st.plotly_chart(fig, use_container_width=True)
 
