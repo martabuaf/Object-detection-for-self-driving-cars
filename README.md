@@ -9,7 +9,7 @@
 <h3>Paso 1: Carga y procesamiento de los datos</h3> 
 <p>Procesaremos las imágenes y las convertiremos al formato necesario para llevar a cabo el entrenamiento de YOLOv8.</p>
 <h3>Paso 2: División del conjunto de datos</h3> 
-<p>Dividiremos las imágenes en 3 subconjuntos de datos: entrenamiento /train), validación (val) y pruebas (test).</p>
+<p>Dividiremos las imágenes en 3 subconjuntos de datos: entrenamiento (train), validación (val) y pruebas (test).</p>
 <h3>Paso 3: Entrenamiento</h3> 
 <p>Llevaremos a cabo el entrenamiento de la red para adaptar su funcionamiento a nuestro conjunto de datos. Establecimos una duración del entrenamiento de 20 epochs. Una vez entrenado guardaremos los mejores pesos alcanzados y evaluremos los resultados de precisión y pérdida para ajustar el entrenamiento.
 <h3>Paso 4: Prueba</h3>
